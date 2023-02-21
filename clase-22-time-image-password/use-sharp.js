@@ -1,0 +1,5 @@
+const sharp = require('sharp')
+sharp('./original.png')
+  .resize(80)
+  .grayscale()
+  .toFile('res-original-80-80.png')
